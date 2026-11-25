@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="brand">
+      <span class="brand-icon">🛍️</span>
+      <span class="brand-name">Mini Shop</span>
+    </div>
+    <div class="cart-indicator">
+      <span class="cart-icon">🛒</span>
+      <span id="cart-badge" class="badge">0</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Controls: Search & Category Filters -->
+    <section class="controls">
+      <input
+        type="text"
+        id="search-input"
+        class="search-box"
+        placeholder="Search products..."
+        aria-label="Search products"
+      />
+      <div id="category-filters" class="filter-group"></div>
+    </section>
+
+    <!-- Cart Summary Bar -->
+    <section class="cart-bar">
+      <div class="cart-total">
+        Total: <strong id="cart-total-price">0 ₫</strong>
+      </div>
+      <button id="clear-cart-btn" class="btn-clear">Clear cart</button>
+    </section>
+
+    <!-- Product Grid -->
+    <section id="product-grid" class="product-grid"></section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
